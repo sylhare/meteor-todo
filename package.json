@@ -1,0 +1,26 @@
+{
+    "name": "meteor-todo",
+    "version": "2.0.0",
+    "description": "Meteor simple todo app",
+    "main": "main.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "meteor run"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Sylhare/todo-app.git"
+    },
+    "author": "sylhare",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Sylhare/todo-app/issues"
+    },
+    "homepage": "https://github.com/Sylhare/todo-app#readme",
+    "dependencies": {
+        "@babel/runtime": "^7.0.0-beta.36",
+        "meteor-node-stubs": "^0.3.2",
+        "react": "^16.2.0",
+        "react-dom": "^16.2.0"
+    }
+}
