@@ -15,4 +15,4 @@ before_install:
   - meteor npm install --save-dev chai
 
 script:
-  - meteor test --driver-package meteortesting:mocha
+  - meteor test --once --driver-package meteortesting:mocha
