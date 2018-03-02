@@ -16,7 +16,13 @@ curl https://install.meteor.com/ | sh
 
 ## Starting the app
 
-After installing meteor, go into the `todo-app/` folder then run:
+After installing meteor, go into the `todo-app/` folder and make sure you have the react dependencies installed using:
+
+```bash
+meteor npm install --save react react-dom
+```
+
+Then start the app with:
 
 ```bash
 meteor
@@ -37,4 +43,3 @@ A mongo DB is created automatically with meteor, add a new task that will be sto
 ```bash
 db.tasks.insert({ text: "Hello world!", createdAt: new Date() });
 ```
-
