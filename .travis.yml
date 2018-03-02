@@ -1,0 +1,18 @@
+sudo: required
+language: node_js
+
+node_js:
+  - "stable"
+
+sudo: required
+addons:
+  chrome: "stable"
+
+before_install:
+  - curl https://install.meteor.com/ | sh
+  - meteor npm install --save react react-dom
+  - meteor add meteortesting:mocha
+  - meteor npm install --save-dev chai
+
+script:
+  - meteor test --once --driver-package meteortesting:mocha

@@ -9,14 +9,10 @@ export default class Task extends Component {
     toggleChecked() {
         // Set the checked property to the opposite of its current value
         Meteor.call('tasks.setChecked', this.props.task._id, !this.props.task.checked);
-        Tasks.update(this.props.task._id, {
-            $set: { checked: !this.props.task.checked },
-        });
     }
 
     deleteThisTask() {
         Meteor.call('tasks.remove', this.props.task._id);
-        Tasks.remove(this.props.task._id);
     }
 
     togglePrivate() {
@@ -51,8 +47,8 @@ export default class Task extends Component {
                 ) : ''}
 
                 <span className="text">
-                    <strong>{this.props.task.username}</strong>: {this.props.task.text}
-                </span>
+          <strong>{this.props.task.username}</strong>: {this.props.task.text}
+        </span>
             </li>
         );
     }
