@@ -4,7 +4,11 @@
 
 This is a basic todo app with the [meteor platform](https://www.meteor.com/) and [React](https://reactjs.org/).
 
-## Meteor Installation
+![https://raw.githubusercontent.com/Sylhare/meteor-todo/security/meteor-todo.png](https://raw.githubusercontent.com/Sylhare/meteor-todo/security/meteor-todo.png)
+
+## Installation
+
+### Meteor
 
 Following the meteor [installation procedure](https://www.meteor.com/install).
 
@@ -14,13 +18,19 @@ On OSX / Linux:
 curl https://install.meteor.com/ | sh
 ```
 
-## Starting the app
+### React
+
+The app is running with react, sometime it is not installed automatically.
 
 After installing meteor, go into the `todo-app/` folder and make sure you have the react dependencies installed using:
 
 ```bash
 meteor npm install --save react react-dom
 ```
+
+## Getting Started
+
+### Basic use
 
 Then start the app with:
 
@@ -30,7 +40,7 @@ meteor
 
 The the app should be running at [localhost:3000/](http://localhost:3000/).
 
-## Getting started
+### Database manipulation
 
 Once the app is started, you can open a new terminal and manually add a todo item with this command:
 
