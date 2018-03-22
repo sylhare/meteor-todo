@@ -1,0 +1,3 @@
+
+# Manual overwrite for fun
+*.js linguist-language=typescript
